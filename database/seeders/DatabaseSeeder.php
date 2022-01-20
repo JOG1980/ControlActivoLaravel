@@ -16,9 +16,12 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        //SEEDERS PRODUCTIVO
+        //SEEDERS PRODUCTIVO ---------------
 
         $this->call(EstadoRegistroSeeder::class);  //invocamos el seeder
+        $this->call(TipoActivoSeeder::class);  //invocamos el seeder
+
+        //SEEDERS TEST ---------------
         
     }
 }
