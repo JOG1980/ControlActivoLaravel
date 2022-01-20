@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAActivoTable extends Migration
+class CreateAActivosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAActivoTable extends Migration
      */
     public function up()
     {
-        Schema::create('a_activo', function (Blueprint $table) {
+        Schema::create('a_activos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateAActivoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('a_activo');
+        Schema::dropIfExists('a_activos');
     }
 }
